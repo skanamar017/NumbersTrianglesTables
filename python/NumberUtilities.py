@@ -15,7 +15,7 @@ def get_exponentiations(start, stop, step, exponent):
     Returns:
         String concatenation of exponential values
     """
-    return None
+    return "".join(str(i**exponent) for i in range(start, stop, step))
 
 
 def get_range(start, stop=None, step=1):
@@ -32,7 +32,7 @@ def get_range(start, stop=None, step=1):
         # Single parameter version: get_range(stop)
         stop = start
         start = 0
-    return None
+    return "".join(str(i) for i in range(start, stop, step))
 
 
 def is_number_even(to_test):
@@ -43,7 +43,7 @@ def is_number_even(to_test):
     Returns:
         Boolean indicating if number is even
     """
-    return False
+    return True if to_test%2==0 else False
 
 
 def is_number_odd(to_test):
@@ -54,7 +54,7 @@ def is_number_odd(to_test):
     Returns:
         Boolean indicating if number is odd
     """
-    return False
+    return True if to_test%2==1 else False
 
 
 def get_even_numbers(start, stop):
@@ -66,7 +66,7 @@ def get_even_numbers(start, stop):
     Returns:
         String concatenation of even numbers
     """
-    return None
+    return "".join(str(i) for i in range(start, stop) if is_number_even(i)==True)
 
 
 def get_odd_numbers(start, stop):
@@ -78,7 +78,7 @@ def get_odd_numbers(start, stop):
     Returns:
         String concatenation of odd numbers
     """
-    return None
+    return "".join(str(i) for i in range(start, stop) if is_number_odd(i)==True)
 
 
 def get_square_numbers(start, stop, step):
@@ -91,4 +91,4 @@ def get_square_numbers(start, stop, step):
     Returns:
         String concatenation of squared numbers
     """
-    return None
+    return get_exponentiations(start, stop, step, 2)
