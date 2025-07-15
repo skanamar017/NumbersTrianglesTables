@@ -21,7 +21,7 @@ def get_multiplication_table(table_size):
     """
     #I did all functions here in one line each so why break it
     return "\n".join((" |".join(f'{i * j:>3}' for j in range(1, table_size + 1)) + " |") for i in range(1, table_size+1))+"\n"
-
+    
 
 
 def get_small_multiplication_table():
