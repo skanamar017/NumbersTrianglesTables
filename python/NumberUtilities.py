@@ -16,7 +16,7 @@ def get_exponentiations(start, stop, step, exponent):
         String concatenation of exponential values
     """
     return "".join(str(i**exponent) for i in range(start, stop, step))
-
+ 
 
 def get_range(start, stop=None, step=1):
     """
