@@ -21,7 +21,7 @@ def get_small_multiplication_table():
     Returns:
         String representation of 4x4 multiplication table
     """
-    return None
+    return get_multiplication_table(5)
 
 
 def get_large_multiplication_table():
@@ -30,4 +30,4 @@ def get_large_multiplication_table():
     Returns:
         String representation of 10x10 multiplication table
     """
-    return None
+    return get_multiplication_table(10)
