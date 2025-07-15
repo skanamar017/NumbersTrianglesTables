@@ -12,7 +12,16 @@ def get_multiplication_table(table_size):
     Returns:
         String representation of formatted multiplication table
     """
-    return "\n".join((" | ".join((str(i*j)) for j in range(1, table_size+1))) for i in range(1, table_size+1))+"\n"
+
+    """
+    out_str=""
+    for i in range(1, table_size+1):
+        out_str += " |".join(f'{i * j:>3}' for j in range(1, table_size + 1)) + " |\n"
+    return out_str
+    """
+    #I did all functions here in one line each so why break it
+    return "\n".join((" |".join(f'{i * j:>3}' for j in range(1, table_size + 1)) + " |") for i in range(1, table_size+1))+"\n"
+
 
 
 def get_small_multiplication_table():

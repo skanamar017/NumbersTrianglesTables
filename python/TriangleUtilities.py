@@ -23,7 +23,7 @@ def get_triangle(number_of_rows):
     Returns:
         String representation of triangle
     """
-    return "\n".join(get_row(i) for i in range(1, number_of_rows))+"\n"
+    return "\n".join(get_row(i) for i in range(1,number_of_rows))+"\n"
     
 
 
